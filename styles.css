@@ -152,7 +152,7 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
   color: #ffbd59;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .tab-contents{
@@ -165,6 +165,8 @@ nav ul li a:hover::after{
 
 .period{
   color: #fff;
+  margin-top: 3px;
+  font-size: 15px;
 }
 
 /* services */
@@ -459,4 +461,10 @@ nav .fa-solid.fa-xmark, .fa-solid.fa-bars{
   .copyright{
     font-size: 14px;
   }
+}
+
+#msg{
+  color: #61b752;
+  margin-top: -35px;
+  display: block;
 }

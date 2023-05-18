@@ -18,7 +18,7 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/logo.png" alt="logo" class="logo" height="60px" />
+          <img src="images/logo.png" alt="logo" class="logo" height="60px" type="submit" onClick="refreshPage()"/>
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -61,7 +61,7 @@
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li><span>UI/UX</span><br />Designing Web / App Interfaces</li>
-                <li><span>Web Development</span><br />Web Development</li>
+                <li><span>Web Development</span><br />Building Websites</li>
                 <li><span>App Development</span><br />Building Android Apps</li>
               </ul>
             </div>
@@ -73,14 +73,14 @@
                    into databases and maintaining accurate records.
                    <br/><p class="period">December 2022 - Present</p>
                   </li>
-                <li><span>Web Development</span><br />Web Development</li>
-                <li><span>App Development</span><br />Building Android Apps</li>
+                <!-- <li><span>Web Development</span><br />Web Development</li>
+                <li><span>App Development</span><br />Building Android Apps</li> -->
               </ul>
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li><span>SMAN 1 Seyegan</span><br />Math Science<br/>2018-2021</li>
-                <li><span>Universitas Teknologi Yogyakarta</span><br />Informatics Engineering<br/>2021-Present</li>
+                <li><span>Universitas Teknologi Yogyakarta</span><br />Informatics Engineering<br/><p class="period">2021-Present</p></li>
+                <li><span>SMAN 1 Seyegan</span><br />Math Science<br/><p class="period">2018-2021</p></li>
               </ul>
             </div>
           </div>
@@ -96,32 +96,30 @@
             <i class="fa-solid fa-code"></i>
             <h2>Web Development</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              nam voluptas sit sapiente aliquid temporibus dignissimos officia
-              dicta, corrupti nesciunt labore impedit, expedita veniam error,
-              nobis veritatis. Accusantium, dicta consequatur.
+              Web development, also known as website development, refers to the 
+              tasks associated with creating, building, and maintaining websites 
+              and web applications that run online on a browser. It may, however, 
+              also include web design, web programming, and database management.
             </p>
-            <a href="#">Learn more</a>
+            <a href="https://brainstation.io/career-guides/what-is-web-development#:~:text=Web%20development%2C%20also%20known%20as,web%20programming%2C%20and%20database%20management.">Learn more</a>
           </div>
           <div>
             <i class="fa-solid fa-crop"></i>
             <h2>App Development</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              nam voluptas sit sapiente aliquid temporibus dignissimos officia
-              dicta, corrupti nesciunt labore impedit, expedita veniam error,
-              nobis veritatis. Accusantium, dicta consequatur.
+              Mobile application development is the process of creating software 
+              applications that run on a mobile device, and a typical mobile application 
+              utilizes a network connection to work with remote computing resources.
             </p>
-            <a href="#">Learn more</a>
+            <a href="https://aws.amazon.com/mobile/mobile-application-development/#:~:text=Mobile%20application%20development%20is%20the,work%20with%20remote%20computing%20resources.">Learn more</a>
           </div>
           <div>
             <i class="fa-brands fa-google-play"></i>
             <h2>UI/UX Design</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-              nam voluptas sit sapiente aliquid temporibus dignissimos officia
-              dicta, corrupti nesciunt labore impedit, expedita veniam error,
-              nobis veritatis. Accusantium, dicta consequatur.
+              UI/UX designers are responsible for designing and improving the user 
+              interface (UI) and user experience (UX) of digital products, such as 
+              websites, mobile apps, and software applications.
             </p>
             <a href="#">Learn more</a>
           </div>
@@ -129,7 +127,7 @@
       </div>
     </div>
     <!-- ----portfolio---- -->
-    <div #id="portfolio">
+    <div id="portfolio">
       <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
@@ -199,6 +197,7 @@
               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit" class="btn btn2">Submit</button>
             </form>
+            <span id="msg"></span>
           </div>
         </div>
       </div>
@@ -207,16 +206,5 @@
       </div>
     </div>
     <script src="script.js"></script>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbyxL0eXLq-2rM7xxgE6diyI5y8Xyb9-l0DRGdn-PeQy2wgS8H17Aeme82vbt_0CDsiN1A/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
   </body>
 </html>
